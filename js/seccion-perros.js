@@ -6,6 +6,7 @@ $(document).ready(function() {
     var nroColumnasPorFila = 5;
     var selectorTablaHTML = "#lista-perros"
     var url = "https://api.thedogapi.com/v1/images/search?limit="+nroTotalImagenes
+    
 
     generar_galeria_imagenes(selectorTablaHTML, nroTotalImagenes, nroColumnasPorFila, url,"Cambiar Imagen");
 });
@@ -13,3 +14,4 @@ $(document).ready(function() {
 function getBtnActionURL() {
     return "https://api.thedogapi.com/v1/images/search?limit=1";
 }
+

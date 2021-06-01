@@ -13,8 +13,10 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <script src="js/formulario-contacto.js"></script>
                                                                                                   
+                                                                                                  
     </head>
     <body>
+
         <div class="container bg-light d-flex flex-column sticky-footer-wrapper min-vh-100">
             <header class="jumbotron">
                 <h1 class="text-center">
@@ -58,18 +60,30 @@
  
             <div id="cuerpo">
                 <section class="form-register">
-                    <h4>Inice Sesion</h4>
-                    <form id="form-login" action="index.html" method="post" action="javascript: void(0)">
+                    <h4>Formulario Registro</h4>
+                    <form id="form-login" action="Login.html" method="post" action="javascript: void(0)">
                         <!-- Nombre -->
                         <p><label for="nombre">Nombre de Usuario</label></p>
                             <input class="controls" type="text" name="nombres" id="nombres" placeholder="Pon tu nombre de usuario" required pattern="[A-Za-z0-9]{8,40}" ></p> 
+                        <!-- correo -->
+                        <p><label for="correo">Correo</label></p>
+                            <input class="controls" type="email" name="correo" id="correo" placeholder="Pon tu mail" 
+                            pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" /></p>
+
                         <!-- Password-->
                         <p><label for="pass">Password</label></p>
-                            <input class="controls" type="password" name="pass" id="pass" placeholder="contraseña " required pattern="[A-Za-z0-9]{2,40}" /></p>
-                        <!-- BOTON inico-->
-                        <p><input type="submit" value="Iniciar Sesion" class="botons" ></p>
+                            <input class="controls" type="password" name="pass" id="pass" placeholder="Pon tu contraseña " required pattern="[A-Za-z0-9]{2,40}" /></p>
+                        <!-- REPETIR Password -->
+                        <p><label for="repass">Repetir Password</label></p>
+                            <input class="controls" type="password" name="pass" id="pass" placeholder="Repite contraseña" required pattern="[A-Za-z0-9]{2,40}" /></p>
+                        <!-- inCONDICIONES DEL SERVICIO-->
+                        <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+                        <input type="checkbox" name="registrarr" id="registrar" required/>
                         <br></br>
-                        <p>Si no tiene cuenta <a href="Registro.html">ingrese aqui</a></p>
+                        <!-- BOTON ENVIAR -->
+                        <p><input type="submit" value="Registrar" class="botons" ></p>
+                        <br></br>
+                        <p>Si ya esta registrado <a href="Login.html">ingrese aqui</a></p>
 
                     </form>
             </section>
